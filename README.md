@@ -217,3 +217,36 @@
     - [ ] D. “Test”
 
 ➡ Follows best practice: initials + descriptive keyword/number.
+
+## Mark an Update Set complete
+![](https://github.com/CodeWithLuwam/CSA-Mock-Exam-Modul-7.2-Migration-and-Integration/blob/main/Images/Mark%20an%20Update%20Set%20complete.png?raw=true)
+1. When should you mark an update set as Complete?
+    - [ ] A. As soon as you create it
+    - [x] B. After configurations are finished and conflicts are resolved
+    - [ ] C. Before testing is complete
+    - [ ] D. Whenever you want to stop tracking changes
+  
+2. Once an update set is marked as Complete, additional customizations can still be tracked in it.
+    - [ ] True
+    - [x] False
+
+3. What happens when you mark an update set as Complete?
+    - [x] A. It becomes available for migration to other instances
+    - [ ] B. It automatically merges with the parent update set
+    - [ ] C. It is deleted from the instance
+    - [ ] D. It reopens in “In Progress” status
+  
+4. If you need to make additional changes after marking an update set as Complete, what should you do?
+    - [ ] A. Change the state back to “In Progress”
+    - [ ] B. Delete the update set and start over
+    - [x] C. Create a new update set for the additional changes
+    - [ ] D. Edit the completed update set directly
+  
+5. You mark an update set as Complete and later realize you forgot a customization. What is the recommended action?
+    - [ ] A. Reopen the completed update set
+    - [ ] B. Add the change directly to the completed update set
+    - [x] C. Create a new update set and commit the additional change there
+    - [ ] D. Merge the change manually into the XML file
+  
+6. Naming conventions for update sets help manage them more effectively. For example, instead of “Performance Enhancements,” you could name them “Performance Enhancements” and “___________.”
+    - [x] “Performance Enhancements 2”
