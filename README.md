@@ -1,6 +1,8 @@
 # CSA-Mock-Exam-Modul-7.2-Migration-and-Integration
 
-## Syetm Update Sets
+## System Update Sets
+![](https://github.com/CodeWithLuwam/CSA-Mock-Exam-Modul-7.2-Migration-and-Integration/blob/main/Images/System%20Update%20Sets.png?raw=true)
+![](https://github.com/CodeWithLuwam/CSA-Mock-Exam-Modul-7.2-Migration-and-Integration/blob/main/Images/System%20Update%20Sets%20part%202.png?raw=true)
 1. What is an Update Set in ServiceNow?
     - [ ] A. A collection of tables and fields that store CMDB data
     - [x] B. A group of configuration and customization changes that can be moved from one instance to another
@@ -62,3 +64,5 @@
     - [x] B. All > System Update Sets > Local Update Sets
     - [ ] C. All > System Applications > Studio
     - [ ] D. All > System Import Sets
+   
+## 
