@@ -65,4 +65,155 @@
     - [ ] C. All > System Applications > Studio
     - [ ] D. All > System Import Sets
    
-## 
+## What is captured in an Update Set?
+![](https://github.com/CodeWithLuwam/CSA-Mock-Exam-Modul-7.2-Migration-and-Integration/blob/main/Images/What%20is%20Captured%20in%20an%20Update%20Set%3F.png?raw=true)
+1. Which of the following is captured in an Update Set?
+    - [ ] A. Tasks
+    - [x] B. Business Rules
+    - [ ] C. New Users and Groups
+    - [ ] D. Modified Configuration Items (CIs)
+
+➡ Business Rules are process records and are captured. Tasks, new users/groups, and modified CIs are data (not captured).
+
+2. You create a new UI Policy to show or hide fields on a form. Will it be captured in an Update Set?
+    - [x] A. Yes
+    - [ ] B. No
+          
+➡ UI Policies are process records, so they are included.
+
+3. Which of the following is NOT captured in an Update Set?
+    - [ ] A. Report definitions (including visualization type and sharing settings)
+    - [ ] B. List configuration
+    - [x] C. New Data Records
+    - [ ] D. Client Scripts
+          
+➡ Update Sets capture configuration changes, not actual data like new incidents or user records.
+
+4. A developer wants to move user records between instances. Which method should they use?
+    - [ ] A. Update Set
+    - [x] B. Export XML
+    - [ ] C. Unload Dashboard
+    - [ ] D. System Clone
+          
+➡ Data records (like users, CIs) must be moved with Export XML, not Update Sets.
+
+5. You’ve built a new dashboard with multiple portal pages. Will this automatically be transferred in an Update Set?
+    - [ ] A. Yes
+    - [x] B. No
+          
+➡ Portal pages from dashboards aren’t automatically included in Update Sets.
+
+6. Which function should you use to move a dashboard and all its related portal pages?
+    - [ ] A. Export XML
+    - [ ] B. Import Set
+    - [x] C. Unload Dashboard
+    - [ ] D. Transform Map
+   
+➡ The “Unload Dashboard” function is required to move dashboards with portal pages.
+
+7. Which of the following is an example of a process record captured in an Update Set?
+    - [x] A. Roles
+    - [ ] B. New Data Records
+    - [ ] C. Scheduled Jobs
+    - [ ] D. Tasks
+          
+➡ Roles are captured. Scheduled Jobs, Tasks, and new data records are data, not captured.
+
+8. Why do Update Sets not capture actual data records (such as incidents or user records)?
+    - [ ] A. To reduce performance load on the instance
+    - [x] B. Because Update Sets are designed for configuration and customization changes
+    - [ ] C. Because Update Sets automatically encrypt data records
+    - [ ] D. To comply with ITIL data handling rules
+          
+➡ They’re meant to move system configuration, not operational/transactional data.
+
+9. Which of the following will be excluded from an Update Set unless special functions are used?
+    - [ ] A. Report Definitions
+    - [ ] B. Fields
+    - [x] C. Dashboard portal pages
+    - [ ] D. UI Policies
+          
+➡ Dashboards require the “Unload Dashboard” function to be included.
+
+10. Which of these statements best describes what an Update Set captures?
+    - [ ] A. It captures all data, including incidents and tasks.
+    - [ ] B. It captures only system logs for auditing.
+    - [x] C. It captures customizations and configuration changes, but not actual data.
+    - [ ] D. It captures both configuration changes and production data.
+          
+➡ That’s the ServiceNow definition of Update Sets.
+
+## Create and select an Update Set
+![](https://github.com/CodeWithLuwam/CSA-Mock-Exam-Modul-7.2-Migration-and-Integration/blob/main/Images/Create%20and%20Select%20an%20Update%20Set.png?raw=true)
+1. Which of the following best describes the purpose of an Update Set?
+    - [ ] A. To store actual data records like incidents and tasks
+    - [x] B. To store configuration and customization changes
+    - [ ] C. To back up all user records for recovery
+    - [ ] D. To schedule automated jobs
+
+2. Where do you navigate in the application navigator to create a new update set?
+    - [ ] A. All > System Definitions > Update Sets
+    - [x] B. All > System Update Sets > Local Update Sets
+    - [ ] C. All > System Properties > Update Set Management
+    - [ ] D. All > Configuration > Update Sets
+
+3. Which button should you click to make the new Update Set the target for configuration changes?
+    - [ ] A. Save
+    - [ ] B. Submit
+    - [x] C. Submit and Make Current
+    - [ ] D. Activate
+
+➡ “Submit” only creates it. “Submit and Make Current” sets it as the active Update Set.
+
+4. What state must an Update Set be in before you can set it as the current set?
+    - [ ] A. Complete
+    - [ ] B. Draft
+    - [x] C. In progress
+    - [ ] D. Closed
+
+➡ Only Update Sets in the “In progress” state can be made current.
+
+5. Which of the following naming conventions is considered best practice for Update Sets?
+    - [ ] A. Random words chosen by the developer
+    - [ ] B. Only numbers, e.g., "001"
+    - [x] C. Including initials, story numbers, or descriptive keywords
+    - [ ] D. Using today’s date only
+
+➡ This ensures clarity when managing multiple Update Sets.
+
+6. Why is it recommended to use descriptive keywords in an Update Set name?
+    - [ ] A. To ensure the system can automatically assign it to a user
+    - [x] B. To make it easily identifiable and maintain clarity when managing multiple sets
+    - [ ] C. To allow the Update Set to be exported in XML format
+    - [ ] D. To improve system performance
+➡ Helps organize and recognize Update Sets across teams.
+
+7. Which of the following actions creates a new Update Set?
+    - [ ] A. Right-clicking on the Update Set table and selecting Insert
+    - [x] B. Navigating to Local Update Sets and clicking New
+    - [ ] C. Cloning the production instance
+    - [ ] D. Running an import set
+
+8. Which field in the Update Set form allows you to describe its purpose in more detail?
+    - [ ] A. Parent
+    - [ ] B. Release date
+    - [ ] C. Application
+    - [x] D. Description
+          
+➡ The description field is intended to clarify its purpose.
+
+9. After submitting a new Update Set, which button must you click to begin capturing configuration changes into it?
+    - [x] A. Submit and Make Current
+    - [ ] B. Update
+    - [ ] C. Save as Default
+    - [ ] D. Capture Changes
+
+➡ Otherwise, changes would go into the previously active Update Set.
+
+10. Which of the following examples is a properly named Update Set?
+    - [ ] A. “Set1”
+    - [x] B. “LUW-CRM-05”
+    - [ ] C. “Today’s Changes”
+    - [ ] D. “Test”
+
+➡ Follows best practice: initials + descriptive keyword/number.
