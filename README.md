@@ -335,3 +335,84 @@ Commit (apply the changes to the target instance).
     - [ ] D. Update sets should be previewed before committing
 
 ✅ Explanation: Update sets capture configuration changes (forms, fields, scripts, etc.) but not transactional data like incidents or users.
+
+## Retrieval from a remote instance
+1. In which instance do you navigate to retrieve an update set from a remote instance?
+    - [ ] A. Development instance
+    - [ ] B. Sub-production instance
+    - [x] C. Production instance
+    - [ ] D. Test instance
+
+✅ Explanation: The screenshot specifies: “In the Production instance: Navigate to All > System Update Sets > Update Sources.”
+
+2. What menu path is used to retrieve update sets from a remote instance?
+    - [ ] A. All > System Update Sets > Retrieved Update Sets
+    - [x] B. All > System Update Sets > Update Sources
+    - [ ] C. All > System Update Sets > Update Logs
+    - [ ] D. All > Applications > Update Management
+
+✅ Explanation: Remote retrieval requires navigating to Update Sources in the production instance.
+
+3. What information must you provide when creating a new Update Source record for a remote instance?
+    - [x] A. URL, Username, Password, Instance Type, Active flag, and Short Description
+    - [ ] B. URL only
+    - [ ] C. sys_id of the update set
+    - [ ] D. Family release version
+
+✅ Explanation: The form requires these fields to establish the connection to the remote instance.
+
+4. What button should be used to verify connectivity to a remote instance before retrieving update sets?
+    - [ ] A. Sync
+    - [ ] B. Validate
+    - [x] C. Test Connection
+    - [ ] D. Check Update
+
+✅ Explanation: The screenshot shows a Test Connection button to confirm the connection details are correct.
+
+5. What are the three main steps when applying an update set (local or remote)?
+    - [ ] A. Validate, Import, Release
+    - [x] B. Retrieve, Preview, Commit
+    - [ ] C. Extract, Transform, Load
+    - [ ] D. Upload, Merge, Release
+
+✅ Explanation: Both local and remote update sets follow the same process: Retrieve → Preview → Commit.
+
+6. What happens automatically when retrieving update sets from a remote instance?
+    - [ ] A. The update sets are committed immediately
+    - [x] B. The platform automatically previews the update sets during retrieval
+    - [ ] C. All update sets are merged into one
+    - [ ] D. The sys_ids are reset to match production
+
+✅ Explanation: With remote instances, ServiceNow streamlines the process by automatically running the preview step.
+
+7. Which update sets are available for retrieval when connecting to a remote instance?
+    - [ ] A. All update sets in the remote instance
+    - [x] B. Only update sets marked as Complete
+    - [ ] C. Only update sets created by the admin user
+    - [ ] D. All update sets since the last connection
+
+✅ Explanation: Only update sets in the Complete state are transferred from the remote (sub-production) instance.
+
+8. After retrieving an update set from a remote instance, where do you access it in the production instance?
+    - [ ] A. Update Sources module
+    - [x] B. Retrieved Update Sets related list
+    - [ ] C. Update Set Logs
+    - [ ] D. System Diagnostics
+
+✅ Explanation: Retrieved update sets are available through the Retrieved Update Sets related list for preview/commit.
+
+9. What is the last step after retrieving and previewing an update set from a remote instance?
+    - [ ] A. Validate it
+    - [ ] B. Re-export it as XML
+    - [x] C. Commit the update set
+    - [ ] D. Refresh the connection
+
+✅ Explanation: Once retrieved and previewed, you must commit the update set to apply changes.
+
+10. Why is it necessary to set up connectivity to each sub-production instance when using remote update sets?
+    - [ ] A. To clone sys_id values
+    - [x] B. To transfer completed update sets from sub-production into production
+    - [ ] C. To automatically update the CMDB
+    - [ ] D. To share transactional data like incidents and tasks
+
+✅ Explanation: Establishing connectivity ensures completed update sets can be moved from sub-production to production.
