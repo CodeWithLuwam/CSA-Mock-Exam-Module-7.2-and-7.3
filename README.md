@@ -250,3 +250,88 @@
   
 6. Naming conventions for update sets help manage them more effectively. For example, instead of “Performance Enhancements,” you could name them “Performance Enhancements” and “___________.”
     - [x] “Performance Enhancements 2”
+  
+# 7.3 Applying and Update Set
+![](https://github.com/CodeWithLuwam/CSA-Mock-Exam-Modul-7.2-Migration-and-Integration/blob/main/Images/Applying%20an%20Update%20Set.png?raw=true)
+1. What are the three typical steps in the Update Set migration process?
+    - [ ] A. Extract, Validate, Commit
+    - [x] B. Retrieve, Preview, Commit
+    - [ ] C. Import, Validate, Release
+    - [ ] D. Download, Install, Test
+
+✅ Explanation: The standard ServiceNow update set migration process is: <br>
+Retrieve (import the XML into the target instance),<br>
+Preview (check for conflicts or errors),<br>
+Commit (apply the changes to the target instance). 
+
+2. What is the purpose of the Preview step when migrating update sets?
+    - [ ] A. To back up the instance before committing
+    - [x] B. To compare changes with the target instance and detect conflicts
+    - [ ] C. To automatically commit updates without errors
+    - [ ] D. To assign sys_id values to all records
+
+✅ Explanation: Previewing allows administrators to identify conflicts or incompatibilities between the update set and existing records before committing, ensuring a smoother migration.
+
+3. What happens if two update sets modify the same record?
+    - [ ] A. Both changes merge automatically
+    - [x] B. The newest change overwrites the older one
+    - [ ] C. Both changes fail to commit
+    - [ ] D. ServiceNow blocks the migration
+
+✅ Explanation: ServiceNow follows a “last write wins” approach. The most recent update overwrites earlier changes during migration.
+
+4. What does ServiceNow recommend as the maximum number of records in an update set to reduce conflicts and simplify review?
+    - [ ] A. 50
+    - [ ] B. 75
+    - [x] C. 100
+    - [ ] D. 200
+
+✅ Explanation: Best practice is to limit update sets to around 100 records to keep them manageable and minimize conflict risk.
+
+5. Which of the following is true about loading update sets between different ServiceNow family releases?
+    - [ ] A. Update sets from a newer release always work on older releases
+    - [ ] B. Update sets from an older release always work on newer releases
+    - [x] C. Additional testing may be required to ensure compatibility between versions
+    - [ ] D. Update sets are version-independent and never require testing
+
+✅ Explanation: Loading update sets from older to newer releases is generally supported but still requires testing; loading from newer to older may require even more validation.
+
+6. Why is it important to ensure all platform records have consistent sys_id fields across instances?
+    - [ ] A. sys_id fields determine update set execution order
+    - [x] B. sys_id mismatches can cause record duplication and migration issues
+    - [ ] C. sys_id fields are used only for reporting and do not affect migration
+    - [ ] D. sys_id fields reset automatically during update set commit
+
+✅ Explanation: sys_id uniquely identifies a record. If they differ between environments, migration may create duplicate records or fail.
+
+7. What is the best way to mitigate sys_id mismatches between production and sub-production instances?
+    - [ ] A. Manually update sys_id values in each record
+    - [x] B. Clone production into sub-production instances before using update sets
+    - [ ] C. Disable sys_id validation during commit
+    - [ ] D. Use a script to auto-generate sys_id values
+
+✅ Explanation: Cloning ensures sys_id consistency across environments, which avoids problems with record references during migration.
+
+8. Where do you navigate in ServiceNow to retrieve update sets from an XML file?
+    - [ ] A. All > System Update Sets > Update Sources
+    - [x] B. All > System Update Sets > Retrieved Update Sets
+    - [ ] C. All > System Diagnostics > Update Set Logs
+    - [ ] D. All > Applications > Update Management
+
+✅ Explanation: To import an update set from XML, you navigate to Retrieved Update Sets and upload the file.
+
+9. What is the main risk of committing an update set without previewing it first?
+    - [ ] A. Longer commit times
+    - [ ] B. Missing system logs
+    - [x] C. Undetected conflicts or incompatibilities may break the instance
+    - [ ] D. The update set will not import correctly
+
+✅Explanation: Skipping preview risks committing changes that conflict with existing records, which can cause errors or unexpected behavior.
+
+10. Which statement about update sets is NOT true?
+    - [ ] A. Update sets capture configuration changes in an instance
+    - [ ] B. Update sets can be exported as XML and imported into another instance
+    - [x] C. Update sets automatically include data like incident records and user records
+    - [ ] D. Update sets should be previewed before committing
+
+✅ Explanation: Update sets capture configuration changes (forms, fields, scripts, etc.) but not transactional data like incidents or users.
