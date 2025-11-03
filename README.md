@@ -251,7 +251,7 @@
 6. Naming conventions for update sets help manage them more effectively. For example, instead of “Performance Enhancements,” you could name them “Performance Enhancements” and “___________.”
     - [x] “Performance Enhancements 2”
   
-# 7.3 Applying and Update Set
+# 7.3 Applying an Update Set
 ![](https://github.com/CodeWithLuwam/CSA-Mock-Exam-Modul-7.2-Migration-and-Integration/blob/main/Images/Applying%20an%20Update%20Set.png?raw=true)
 1. What are the three typical steps in the Update Set migration process?
     - [ ] A. Extract, Validate, Commit
